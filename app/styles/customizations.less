@@ -1,0 +1,92 @@
+//Blackshore customizations
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,400,700,600);
+@font-family-base:          'Titillium Web','Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif;
+
+
+/* MEASUREMENTS */
+@gutter:                    15px;
+@height-top-nav:            35px;
+@height-footer:             35px;
+@main-menu-icon-width:      @height-top-nav;
+
+/* COLORS */
+@brand-primary-color:       #2f363c;
+@brand-secondary-color:     #3c5e7c;
+@brand-tertiary-color:      #2d110e;
+@default-border-color:      #6485a3;
+
+
+body{
+  background: @brand-primary-color;
+}
+body {
+  background: url("https://accounts.blackshore.com/images/bg-main-1600x901.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body, div, p, a, label{
+  font-family: @font-family-base !important;
+  color: #fff;
+}
+.login-view .email-password-area,.login-view .email-password-area.large{
+  background: @brand-secondary-color;
+  border-radius: 0;
+}
+
+.box, .login-view .box {
+  background-color: @brand-secondary-color;
+  border: 1px solid @brand-primary-color;
+  border-radius: 0px;
+  padding: 0 30px;
+  -webkit-box-shadow: 0 0 10px darken(@brand-primary-color,3%);
+  -moz-box-shadow: 0 0 10px darken(@brand-primary-color,3%);
+  box-shadow: 0 0 10px darken(@brand-primary-color,3%);
+}
+.login-view .social-area{
+  background-color: @brand-secondary-color;
+}
+@media (min-width: 767px){
+  .login-view .email-password-area.small {
+    border-right: 1px solid @default-border-color;
+  }
+}
+@media (max-width: 767px){
+  .login-view .email-password-area.small {
+    border-bottom: 1px solid @default-border-color;
+  }
+}
+
+a,a:active,a:visited{
+  text-decoration: none;
+  color: lighten(@brand-secondary-color,20%);
+}
+a:hover{
+  color: lighten(@brand-secondary-color,30%);
+  text-decoration: none;
+}
+
+button,button.btn-sp-green {
+  height: 45px;
+  line-height: 22.5px;
+  padding: 0 40px;
+  color: #fff;
+  font-size: 17px;
+  background: #2f363b;
+}
+button.btn-sp-green:hover{
+  background:#343b41;
+}
+.alert-warning{
+  background:none;
+  border:none;
+  border-radius:0;
+}
+.alert-danger {
+  background-color: @brand-secondary-color;
+  border-color: @brand-secondary-color;
+  color: #fff;
+  border-radius:none;
+}
